@@ -1,8 +1,9 @@
 import fs from "fs";
 import { useEffect, useState } from "react";
-const dirTree = require("directory-tree");
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMosque } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+const App = () => {
   function importAll(r) {
     return r.keys().map(r);
   }
@@ -18,7 +19,9 @@ function App() {
     <>
       <header>
         <ul>
-          <li> Al Khutba </li>
+          <li>
+            <FontAwesomeIcon icon={faMosque} /> Al Khutba
+          </li>
         </ul>
       </header>
       <main>
@@ -48,6 +51,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;
