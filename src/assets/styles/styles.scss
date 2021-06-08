@@ -1,0 +1,75 @@
+@import "./variables.scss";
+@import "./common.scss";
+
+header {
+  //   background-color: $olive-drab;
+  background-color: $color-1;
+}
+
+header {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  ul {
+    li {
+      list-style: none;
+      color: $magic-mint;
+      text-transform: uppercase;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding-top: 4rem;
+  background-color: $color-3;
+  color: $turqouise-green;
+}
+
+section {
+  width: 80%;
+}
+
+aside {
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      text-align: left;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      text-transform: capitalize;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+      padding-right: 3rem;
+      padding: 1rem;
+      //   background-color: #fff;
+      &:hover {
+        color: #fff;
+        background-color: $color-4;
+      }
+      span {
+        transition: all 0.2s ease-in-out;
+        color: $color-2;
+      }
+    }
+    .active {
+      background-color: $color-2;
+      span {
+        color: $color-3;
+      }
+    }
+  }
+}
