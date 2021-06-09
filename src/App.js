@@ -35,7 +35,9 @@ const App = () => {
                 }}
                 className={index === activeIndex ? "active" : ""}
               >
-                <span>{f.default.split("/")[3].replace("KHpdf", "")}</span>
+                <a href={f.default} target="_blank">
+                  <span>{f.default.split("/")[3].replace("KHpdf", "")}</span>
+                </a>
               </li>
             ))}
           </ol>
